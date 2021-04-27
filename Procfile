@@ -1,1 +1,1 @@
-web: gunicorn zuriblogapp1.wsgi
+web: gunicorn zuriblog.wsgi
