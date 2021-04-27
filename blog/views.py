@@ -19,3 +19,4 @@ class BlogCreateView(CreateView):  # new
     model = Post
     template_name = 'post_new.html '
     fields = ['title ', 'author', 'body']
+
