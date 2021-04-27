@@ -1,0 +1,35 @@
+body {
+    font-family: "Source Sans Pro";
+    font-size: 18px;
+}
+header {
+    border-bottom: 1px solid #999;
+    margin-bottom: 2rm;
+    display: flex;
+}
+header h1 a {
+    color: red;
+    text-decoration: none;
+}
+
+.nav-left {
+    margin-right: auto;
+}
+
+.nav-right{
+    display: flex;
+    padding-top: 2em;
+}
+
+.post-entry{
+    margin-bottom: 2rm;
+}
+.post-entry h2 a,
+.post-entry h2 a:visited {
+    color: blue;
+    font-weight: 400;
+}
+
+.post-entry h2 a:hover {
+    color: red;
+}
