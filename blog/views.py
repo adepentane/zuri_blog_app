@@ -20,6 +20,7 @@ class BlogCreateView(CreateView):  # new
     model = Post
     template_name = 'post_new.html '
     fields = ['title ', 'author', 'body']
+    #success_url = reverse_lazy('home')
 
 
 class BlogUpdateView(UpdateView):
