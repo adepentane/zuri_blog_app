@@ -6,7 +6,7 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Django Blog</title>
+    <title>My Django Blog</title>
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400" rel="stylesheet">
     <link rel="stylesheet" href="{% static 'css/base.css' %}">
 </head>
@@ -20,6 +20,16 @@
         <a href= "{% url 'post_new' %}" >+ New Blog Post</a>
     </div>
 </header>
+    {% if user.is_authenticated %}
+        <p>Hi {{ user.username }}!</p> | You can logout Here <a href="{% url 'logout' %}">Log out</a>
+        {% else %}
+        <p>You are not logged in.</p>
+        <a href="{% url 'login' %}">Log In</a>
+
+    {% endif %}
+
+
+
 {% block content %}
 {% endblock content %}
 
